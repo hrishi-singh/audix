@@ -1,24 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
-
+import Home from "./Frontend/Home";
+import Navbar from "./Frontend/Navbar";
+import AllAudioBooks from "./Frontend/AllAudioBooks";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import Footer from "./Frontend/Footer";
+import axios from "axios";
+import { useState, useEffect } from "react";
+import BookDescription from "./Frontend/BookDescription";
 function App() {
+  const [mainData, setMainData] = useState([]);
+  const getData = async () => {
+    const res = await axios.get("http://localhost:8000/audiobooks/");
+    setMainData(res.data);
+  };
+  useEffect(() => {
+    getData();
+  }, []);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home data={mainData} />} />
+        <Route
+          path="/all-audiobooks"
+          element={<AllAudioBooks data={mainData.slice(0,24)} />}
+        />
+         <Route
+          path="/details/:id"
+          element={<BookDescription/>}
+        
+        />
+      </Routes>
+      <Footer />
+    </Router>
   );
 }
 

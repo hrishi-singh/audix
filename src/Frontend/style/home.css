@@ -1,0 +1,107 @@
+nav{
+    background-color:var(--primary-green);
+    font-family: 'Roboto';
+    font-weight: 300;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px 60px;
+    height: 70px;
+    border-radius: 0 0 34px 34px;
+    
+}
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+  
+    margin: 0 12px;
+    justify-content: right;
+    cursor: pointer;
+}
+nav ul li{
+    margin: 0 20px;
+}
+#logo{
+    font-family: 'Bebas Neue';
+    font-size: 32px;
+    cursor: pointer;
+    color: white;
+}
+#hero{
+    display: grid;
+    grid-template-columns: 1.25fr 2fr;
+    padding: 10px 60px;
+    background-image:url('/Users/hrishi-pc/Projects/Audiobook_website/audix/src/Assets/images/Head_bg.png');
+    height: 100vh;
+}
+.welcome-text{
+    font-family: 'Bebas Neue';
+    margin-top: 60px;
+    font-size: 53px;
+    font-weight: 100;
+}
+.welcome-text h2{
+    color: var(--secondary-green);
+    font-size: 180px;
+    font-weight: 100;
+}
+.welcome-text h1{
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.welcome-text span{
+    background-color: var(--primary-green);
+    padding: 20px 36px;
+    border-radius: 40px;
+    font-family: 'Roboto';
+    font-size: 24px;
+    cursor: pointer;
+}
+#hero img{
+    float: right;
+}
+
+.__cat-list{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-family: 'Roboto';
+    font-weight: lighter;
+}
+.__cat-list li{
+    display: inline-flex;
+    margin: 12px;
+    list-style: none;
+    justify-content: space-between;
+    background-color: var(--primary-green);
+    padding: 20px 40px;
+    margin: 20px;
+    border-radius: 34px;
+}
+.__cat-list li:hover{
+    background-color: var(--secondary-green);
+    color: var(--primary-black);
+    font-weight: 300;
+    transition: ease-in-out 0.1s;
+
+}
+#view-all {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    margin-bottom: 80px;
+}
+#view-all a{
+    background-color: var(--secondary-green);
+    padding: 30px 60px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: 'Roboto';
+    border-radius: 60px;
+   
+}

@@ -1,0 +1,124 @@
+#detail-container{
+    padding: 40px 80px;
+    background-image:url('/Users/hrishi-pc/Projects/Audiobook_website/audix/src/Assets/images/Head_bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* height: 120vh; */
+    width: 100%;
+    flex-direction: column;
+}
+.__desc-img-box{
+    display: flex;
+    justify-content: center;
+}
+.__desc-img-box img{
+    height: 400px;
+    width: 300px;
+    margin: 20px;
+    border-radius: 40px;
+}
+.__desc-book-title{
+    color: var(--secondary-green);
+  font-size: 48px;
+  padding: 20px 0px;
+  font-family: 'Bebas Neue';
+  letter-spacing: 0.1cap;
+  display: flex;
+  justify-content: flex-start;
+
+}
+.__detail-box{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+.__desc_peek-info{
+    display: flex;
+    gap: 60px;
+    align-items: center;
+}
+.__peek-subinfo{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.__peek-subinfo svg{
+    width: 24px;
+}
+.__desc-content{
+    width: 60%;
+    margin-top: 20px;
+    font-family: 'Roboto';
+    font-size: 18px;
+
+}
+.__review-btn{
+    width: 30%;
+    font-family: 'Roboto';
+    font-weight: 300;
+    margin: 0px;
+}
+.__reviews-container{
+    display: inline-flex;
+    flex-direction: column; 
+    align-items: flex-start;
+    font-family: 'Roboto';
+}
+
+.__reviews-card{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.__reviews{
+    background-color: var(--primary-green);
+    padding: 20px;
+    margin: 12px;
+    border-radius: 34px;
+}
+.__review p{
+    /* margin: 10px 0px; */
+}
+.__review svg{
+    height: 20px;
+    width: 60%;
+}
+.__write-review-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto';
+    margin: 20px;
+    flex-wrap: wrap;
+}
+.__review-form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--primary-green);
+    padding: 30px;
+    width: 60%;
+    border-radius: 40px;
+}
+.__review-info{
+    display: inline-flex;
+    padding: 20px;
+    gap: 20px;
+    flex-direction: column;
+}
+.__review-info textarea{
+    height: 150px;
+    background: grey;
+    border-radius: 14px;
+    padding: 8px;
+    color: white;
+}
+.__rating{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    width: 15%;
+    
+
+}
+.__rating svg{
+    height: 20px;
+}

@@ -1,13 +1,40 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body{
+  background-color: var(--primary-black);
+  color: white;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h4{
+  color: var(--secondary-green);
+  font-size: 48px;
+  padding: 20px;
+  margin: 20px;
+  font-family: 'Bebas Neue';
+  letter-spacing: 0.1cap;
+  display: flex;
+  justify-content: center;
+
+}
+  
+h5{
+  color: var(--secondary-green);
+  font-size: 48px;
+  padding: 20px;
+  margin: 20px;
+  font-family: 'Bebas Neue';
+  letter-spacing: 0.1cap;
+
+}
+
+:root{
+  --primary-black: #0D0D0D;
+  --primary-green: #0F4037;
+  --secondary-green: #A7F2BA;
 }

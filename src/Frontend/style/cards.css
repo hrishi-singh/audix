@@ -1,0 +1,49 @@
+.container{
+    height: 333px;
+    width: 222px;
+    border-radius: 34px;
+    background-color: var(--primary-green);
+    font-family: 'Roboto';
+    font-size: 12px;
+    margin: 30px;
+}
+.imgbox{
+    display: flex;
+    justify-content: center;
+}
+.imgbox img{
+    padding: 20px;
+    height: 200px;
+    width: 200px;
+}
+.__book-title{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    font-size: 16px;
+}
+.info{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 2fr 1fr;
+    position: relative;
+    margin: 10px;
+}
+.__sub-info{
+    display: flex;
+    gap: 4px;
+    padding: 0 10px;
+    font-weight: lighter;
+}
+.__view-btn{
+    background-color: var(--secondary-green);
+    padding: 10px 50px;
+    margin: 0 35px;
+    position: relative;
+    top: 30px;
+    border-radius: 40px;
+    color: var(--primary-black);
+    text-decoration: none;
+    font-size: 20px;
+    cursor: pointer;
+}
