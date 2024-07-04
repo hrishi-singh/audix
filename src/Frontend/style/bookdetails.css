@@ -1,6 +1,6 @@
 #detail-container{
     padding: 40px 80px;
-    background-image:url('/Users/hrishi-pc/Projects/Audiobook_website/audix/src/Assets/images/Head_bg.png');
+    background-image:url('../../Assets/images/Head_bg.png');
     background-repeat: no-repeat;
     background-size: cover;
     /* height: 120vh; */
