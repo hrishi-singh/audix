@@ -33,7 +33,7 @@ nav ul li{
     display: grid;
     grid-template-columns: 1.25fr 2fr;
     padding: 10px 60px;
-    background-image:url('/Users/hrishi-pc/Projects/Audiobook_website/audix/src/Assets/images/Head_bg.png');
+    background-image:url('../../Assets/images/Head_bg.png');
     height: 100vh;
 }
 .welcome-text{
