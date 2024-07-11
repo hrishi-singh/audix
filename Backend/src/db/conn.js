@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 mongoose
-  .connect("mongodb://localhost:27017/audiobook_database")
+  .connect(process.env.DATABASE_URL || "mongodb://localhost:27017/audiobook_database")
   .then(() => {
     console.log("connection successful");
   })

@@ -9,15 +9,7 @@ app.use(express.json());
 app.use(cors(
   
 ));
-// app.get("/",async(req,res)=>{
-//   try {
-//     res.status(200).send("Yes");
-//   } catch (error) {
-//     console.log("Error");
-//     res.status(404).send(error);
-    
-//   }
-// })
+
 app.get("/audiobooks", async (req, res) => {
   try {
     const getAudioBooks = await BookDetail.find(req.query);
