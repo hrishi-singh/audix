@@ -1,14 +1,23 @@
 const express = require("express");
-require("./db/conn.js");
+require("./src/db/conn.js");
 const cors =require("cors");
 
-const BookDetail = require("./models/books.js");
+const BookDetail = require("./src/models/books.js");
 const app = express();
 const port = process.env.PORT || 8000;
 app.use(express.json());
 app.use(cors(
   
 ));
+app.get("/",async(req,res)=>{
+  try {
+    res.status(200).send("Yes");
+  } catch (error) {
+    console.log("Error");
+    res.status(404).send(error);
+    
+  }
+})
 app.get("/audiobooks", async (req, res) => {
   try {
     const getAudioBooks = await BookDetail.find(req.query);
