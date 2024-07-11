@@ -9,6 +9,15 @@ app.use(express.json());
 app.use(cors(
   
 ));
+app.get("/",async(req,res)=>{
+  try {
+    console.log("yes, its done");
+    res.statu(200).send("Yes");
+  } catch (error) {
+    console.log("error occured",error);
+    
+  }
+})
 app.get("/audiobooks", async (req, res) => {
   try {
     const getAudioBooks = await BookDetail.find(req.query);
