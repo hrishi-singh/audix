@@ -11,7 +11,6 @@ app.use(cors(
 ));
 app.get("/",async(req,res)=>{
   try {
-    console.log("yes, its done");
     res.status(200).send("Yes");
   } catch (error) {
     console.log("Error");
