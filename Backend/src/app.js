@@ -12,9 +12,10 @@ app.use(cors(
 app.get("/",async(req,res)=>{
   try {
     console.log("yes, its done");
-    res.statu(200).send("Yes");
+    res.status(200).send("Yes");
   } catch (error) {
-    console.log("error occured",error);
+    console.log("Error");
+    res.status(404).send(error);
     
   }
 })
