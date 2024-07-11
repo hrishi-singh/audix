@@ -9,7 +9,7 @@ app.use(express.json());
 app.use(cors(
   {
     origin:["audixfrontend-hrishi-singhs-projects.vercel.app"],
-    methods:["get","post","patch","delete"],
+    methods:["POST","GET"],
     credentials:true
   }
 ));
