@@ -6,7 +6,9 @@ const BookDetail = require("./models/books.js");
 const app = express();
 const port = process.env.PORT || 8000;
 app.use(express.json());
-app.use(cors());
+app.use(cors(
+  
+));
 app.get("/audiobooks", async (req, res) => {
   try {
     const getAudioBooks = await BookDetail.find(req.query);

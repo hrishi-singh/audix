@@ -7,9 +7,11 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 import BookDescription from "./Frontend/BookDescription";
 function App() {
+  const port = 'https://audix-api.vercel.app';
+  console.log(port);
   const [mainData, setMainData] = useState([]);
   const getData = async () => {
-    const res = await axios.get("http://localhost:8000/audiobooks/");
+    const res = await axios.get(`${port}/audiobooks`);
     setMainData(res.data);
   };
   useEffect(() => {
