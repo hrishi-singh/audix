@@ -8,7 +8,7 @@ const port = process.env.PORT || 8000;
 const corsConfig={
   origin:"*",
   credential: true,
-  methods: ["GET","POST","PUT","DELETE"],
+  methods: ["GET","POST","PUT","PATCH","DELETE"],
 };
 app.options("",cors(corsConfig));
 app.use(express.json());
