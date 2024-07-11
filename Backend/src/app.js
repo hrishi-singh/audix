@@ -57,7 +57,6 @@ app.patch("/audiobooks/:id/reviews",async(req,res)=>{
       comment
     }
     bookdetail.reviews.push(review)
-    // product.numReviews = product.reviews.length
     bookdetail.rating=
     bookdetail.reviews.reduce((acc,item)=>item.rating+acc,0)/bookdetail.reviews.length
     await bookdetail.save()
@@ -79,6 +78,3 @@ app.listen(port, () => {
   console.log(`connected at port ${port}`);
 });
 
-// uSaT4tWfgGvNTRVc
-
-// mongodb+srv://singhhrishi007:uSaT4tWfgGvNTRVc@cluster0.xsmrkhz.mongodb.net/

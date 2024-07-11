@@ -2,8 +2,8 @@ const mongoose = require("mongoose");
 mongoose
   .connect("mongodb://localhost:27017/audiobook_database")
   .then(() => {
-    console.log("connection successful, really ?");
+    console.log("connection successful");
   })
   .catch((e) => {
-    console.log("no connection :(");
+    console.log("no connection :(",e);
   });
