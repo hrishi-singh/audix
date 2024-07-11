@@ -5,10 +5,14 @@ const cors =require("cors");
 const BookDetail = require("./src/models/books.js");
 const app = express();
 const port = process.env.PORT || 8000;
+const corsConfig={
+  origin:"*",
+  credential: true,
+  methods: ["GET","POST","PUT","DELETE"],
+};
+app.options("",cors(corsConfig));
 app.use(express.json());
-app.use(cors(
-  
-));
+app.use(cors(corsConfig));
 
 app.get("/audiobooks", async (req, res) => {
   try {
