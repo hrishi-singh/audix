@@ -1,15 +1,24 @@
 {
-  "version": 2,
-  "builds": [
-  {
-  "src": "*.js",
-  "use": "@vercel/node"
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.4.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4",
+    "@babel/plugin-proposal-private-property-in-object": "^7.1.0"
   }
-  ],
-  "routes": [
-  {
-  "src": "/(.*)",
-  "dest": "/"
-  }
-  ]
-  }
+}
+
