@@ -8,7 +8,7 @@ const port = process.env.PORT || 8000;
 app.use(express.json());
 app.use(cors(
   {
-    origin:["https://audixx.vercel.app"],
+    origin:["audixfrontend-hrishi-singhs-projects.vercel.app"],
     methods:["get","post","patch","delete"],
     credentials:true
   }
