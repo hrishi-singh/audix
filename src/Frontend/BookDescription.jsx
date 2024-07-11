@@ -10,7 +10,7 @@ const BookDescription = () => {
   const [reviewer, setReviewer] = useState("");
   const [rating, setRating] = useState(0);
   const getDetail = async () => {
-    const res = await axios.get(`https://audixx.vercel.app/audiobooks/${param.id}`);
+    const res = await axios.get(`https://audix-api.vercel.app/audiobooks/${param.id}`);
     setDetail(res.data);
     if (
       typeof res.data.reviews !== "undefined" &&
@@ -26,7 +26,7 @@ const BookDescription = () => {
   const submitHandler = async(e) => {
     e.preventDefault();
     try {
-      const response = await axios.patch(`https://audixx.vercel.app/audiobooks/${param.id}/reviews`, { name:reviewer,rating:rating,comment:comment }).then(()=>{
+      const response = await axios.patch(`https://audix-api.vercel.app/audiobooks/${param.id}/reviews`, { name:reviewer,rating:rating,comment:comment }).then(()=>{
         alert("Review Submitted Successfully !")
         getDetail();
         setReviewer('');
