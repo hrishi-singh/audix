@@ -15,14 +15,7 @@ const Home = (props) => {
           <h3>Discover, Rate, and Review: </h3>
           <h2>Audix</h2>
           <h1>
-            Welcome to Audix, the ultimate audiobook experience that brings
-            stories to life. Whether you're commuting, working out, or relaxing
-            at home, Audix offers a vast library of audiobooks across all
-            genres, narrated by some of the most captivating voices. Our
-            intuitive web app makes it easy to discover, download, and enjoy
-            your favorite books anytime, anywhere. Dive into a world of
-            imagination and adventure with Audix – where every story finds its
-            voice.
+            Welcome to Audix, your go-to platform for exploring and rating the best audiobooks. Dive into a vast library of captivating stories across genres, all curated to enhance your listening experience. Whether you're a casual listener or a devoted audiobook enthusiast, Audix offers a seamless way to discover new titles, read insightful reviews from fellow listeners, and rate your favorites. Join our community today and let your voice be heard as you help others find their next great listen!
           </h1>
           <span>Explore Now</span>
         </div>
