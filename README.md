@@ -1,4 +1,4 @@
-# Audix - Audiobook Web App
+# Audix - Audiobook Reviews Web App
 
 Audix is an audiobook web app that allows users to explore, review, and rate a wide range of audiobooks. Built with modern web technologies, Audix offers a user-friendly interface and a rich user experience, making it easier than ever to discover your next great listen.
 
