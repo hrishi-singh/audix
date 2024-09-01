@@ -1,70 +1,86 @@
-# Getting Started with Create React App
+# Audix - Audiobook Web App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Audix is an audiobook web app that allows users to explore, review, and rate a wide range of audiobooks. Built with modern web technologies, Audix offers a user-friendly interface and a rich user experience, making it easier than ever to discover your next great listen.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Explore a vast collection of audiobooks across various genres.
+- Read and write reviews for your favorite audiobooks.
+- Rate audiobooks to help others find great content.
+- User-friendly and visually appealing interface.
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Getting Started
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+To get started with Audix, follow these steps:
 
-### `npm test`
+### Prerequisites
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Make sure you have the following installed on your machine:
 
-### `npm run build`
+- [Node.js](https://nodejs.org/en/) (v14 or higher)
+- [MongoDB](https://www.mongodb.com/) (local or cloud instance)
+- [Git](https://git-scm.com/)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clone the repository:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   ```bash
+   git clone https://github.com/your-username/audix.git
+   cd audix
+   ```
 
-### `npm run eject`
+2. Install the dependencies for both the frontend and backend:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   ```bash
+   # Install backend dependencies
+   cd server
+   npm install
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   # Install frontend dependencies
+   cd ../client
+   npm install
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+3. Set up environment variables:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   - Create a `.env` file in the `server` directory and add your MongoDB URI and any other required environment variables.
 
-## Learn More
+   ```bash
+   MONGO_URI=your_mongodb_uri
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Running the Development Server
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Start the backend server:
 
-### Code Splitting
+   ```bash
+   cd server
+   npm run dev
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+2. Start the frontend server:
 
-### Analyzing the Bundle Size
+   ```bash
+   cd ../client
+   npm start
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+3. Open your browser and navigate to `http://localhost:3000` to see the app in action.
 
-### Making a Progressive Web App
+## Tech Stack
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- **React.js**: The app's frontend is built using React.js, providing a dynamic and responsive user interface.
+- **MERN Stack**: The backend is powered by the MERN stack (MongoDB, Express.js, React.js, Node.js), enabling efficient and scalable full-stack development.
+- **REST API**: The application communicates between the frontend and backend using REST APIs, ensuring smooth data flow and interaction.
+- **Figma**: The UI/UX design was created in Figma, providing a clean and modern look.
+- **Mockaroo**: Audiobook data was randomly generated using Mockaroo for testing and development purposes.
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Contributing
 
-### Deployment
+We welcome contributions to Audix! If you have any ideas, bug fixes, or enhancements, please feel free to submit a pull request. Be sure to follow the project's coding guidelines and include detailed information in your pull requests.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Happy coding! 🎧
